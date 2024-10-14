@@ -1,0 +1,429 @@
+/* Grundläggande reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header och navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fbc610;
+}
+
+/* CTA-knapp */
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #fbc610;
+}
+
+
+
+/* Hamburger icon styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+/* Hamburger animation när den öppnas (blir till ett kryss) */
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #fff;
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #fff;
+}
+
+/* Mobile Menu Styling */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.mobile-menu ul {
+    list-style: none;
+}
+
+.mobile-menu ul li {
+    margin: 20px 0;
+}
+
+.mobile-menu ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.mobile-menu ul li a:hover {
+    color: #fbc610;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+    .cta-button {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* Hero-sektion */
+.hero {
+    background-image: url('/bilder/stora/skruvdragare-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 40px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    max-width: 600px;
+}
+
+.hero h1 strong {
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+.cta-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+}
+
+.contact-item {
+    margin-right: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.contact-item:hover {
+    background-color: #fbc610;
+}
+
+.contact-item .contact-icon {
+    margin-right: 10px;
+    height: 15px;
+}
+
+.contact-item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .contact-item {
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    .hero {
+        padding: 100px 20px;
+    }
+}
+
+
+.services {
+    padding: 130px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-weight: 400;
+    max-width: 600px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tre kolumner */
+    gap: 20px; /* Mellanrum mellan rutorna */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.service-item {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    border-radius: 8px;
+}
+
+.service-item img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+/* Responsiv design för mindre skärmar */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr 1fr; /* Två kolumner på mindre skärmar */
+    }
+    .services h2 {
+        font-size: 2rem;
+    }
+    .sub-heading {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .service-grid {
+        grid-template-columns: 1fr; /* En kolumn på väldigt små skärmar */
+    }
+}
+
+
+
+.about-us {
+    background-image: url('/bilder/stora/lyftkran-hero.jpg');
+    background-size: cover; /* Får bilden att täcka hela sektionen */
+    background-position: center;
+    height: 600px; /* Justera beroende på hur stor du vill att sektionen ska vara */
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        max-width: 300px;
+    }
+    .overlay p {
+        font-size: 1rem;
+    }
+    .overlay h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    .overlay {
+        max-width: 250px;
+        margin-right: 10px;
+
+    }
+}
+
+@media (min-width: 1000px) {
+    .overlay {
+        max-width: 500px;
+    }
+}
+
+
+
+.clients {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.clients h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 40px;
+}
+
+.client-logo {
+    display: inline-block;
+    max-width: 200px;
+    padding: 20px;
+}
+
+.client-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item {
+    padding: 10px;
+}
+
+.carousel-item img {
+    width: 200px;
+    height: auto;
+    object-fit: contain; /* Detta ser till att bilden behåller proportionerna */
+    background-color: #d3d3d3; /* Grå bakgrundsfärg som visas om bilden är för liten */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #333; /* Ändrar färgen på pilarna */
+    border-radius: 50%;
+    padding: 5px;
+}
