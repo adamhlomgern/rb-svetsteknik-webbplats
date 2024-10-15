@@ -438,6 +438,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     margin-bottom: 40px;
+    margin-top: 80px;
 
 }
 
@@ -494,7 +495,8 @@ body {
         margin: 0 auto;
         overflow: hidden;
         margin-bottom: 40px;
-    
+        margin-top: 80px;
+
     }
 }
 
@@ -714,4 +716,27 @@ body {
     .footer-column {
         margin-bottom: 20px;
     }
+    .social-link {
+        display: flex;
+        align-items: center; /* Justerar ikonen och texten i mitten vertikalt */
+      }
+      
+      .social-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px; /* Skapar lite mellanrum mellan ikonen och texten */
+      }
+      
 }
+
+
+.social-link {
+    display: flex;
+    align-items: center; /* Justerar ikonen och texten i mitten vertikalt */
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* Skapar lite mellanrum mellan ikonen och texten */
+  }
