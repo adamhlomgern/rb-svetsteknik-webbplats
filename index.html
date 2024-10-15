@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RB Svetsteknik AB</title>
-    <link rel="stylesheet" href="/styles.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link rel="stylesheet" href="/styles.css">
+
 </head>
 
 <body>
@@ -24,10 +28,10 @@
                 <ul class="nav-links">
                     <li><a href="#services">TJÄNSTER</a></li>
                     <li><a href="#about-us">OM OSS</a></li>
-                    <li><a href="#tjanster">PROJEKT</a></li>
+                    <li><a href="#projekt">PROJEKT</a></li>
                 </ul>
                 <div class="cta">
-                    <a href="#cta_button" class="cta-button">KONTAKTA OSS</a>
+                    <a href="#contact" class="cta-button">KONTAKTA OSS</a>
                 </div>
 
                 <div class="hamburger" onclick="ShowHide(this)">
@@ -41,8 +45,8 @@
                     <ul>
                         <li><a href="#services" onclick="ShowHide()">TJÄNSTER</a></li>
                         <li><a href="#about-us" onclick="ShowHide()">OM OSS</a></li>
-                        <li><a href="#tjanster" onclick="ShowHide()">PROJEKT</a></li>
-                        <li><a href="#cta_button" onclick="ShowHide()">KONTAKTA OSS</a></li>
+                        <li><a href="#projekt" onclick="ShowHide()">PROJEKT</a></li>
+                        <li><a href="#contact" onclick="ShowHide()">KONTAKTA OSS</a></li>
                     </ul>
                 </div>
 
@@ -132,39 +136,146 @@
         </section>
         
 
-        <!-- Ladda in Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<div id="clientCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/bilder/karusell/1-100.jpg" alt="Smurfit Kappa">
+        <!-- Projekt -->
+        <div class="swiper mySwiper" id="projekt">
+            <div class="swiper-heading">
+                <h3>Tidigare projekt</h3>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/1-100.jpg" alt="Svetsning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/2-100.jpg" alt="Svets industri">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/3-100.jpg" alt="Legotillverkning svetsning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/4-100.jpg" alt="Stålmontage och gjutning">
+                </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/5-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/6-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/7-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/8-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/9-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/10-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/11-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/12-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+              <div class="swiper-slide">
+                <img src="/bilder/karusell/13-100.jpg" alt="Stålmontage och gjutning">
+              </div>
+            </div>
+          
+            <!-- Navigation -->
+
+          
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          
+
+          <section id="contact" class="contact-section">
+            <h2>Kontakta oss</h2>
+            <p>Har du frågor eller vill komma i kontakt med oss? Fyll i formuläret nedan så återkommer vi så snart som möjligt! Du kan även slå en pling eller maila oss.</p>
+            <div class="contact-info-2">
+                <div class="contact-item-2">
+                    <img src="/bilder/phone-call.png" alt="Telefon ikon" class="contact-icon-2">
+                    <a href="tel:0704877670">0704877670</a>
+                </div>
+                <div class="contact-item-2">
+                    <img src="/bilder/envelope.png" alt="E-post ikon" class="contact-icon-2"> 
+                    <a href="mailto:rbsvetsteknik@gmail.com">rbsvetsteknik@gmail.com</a>
+                </div>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        
+                <!-- Form Inputs -->
+                <div class="form-group">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" required placeholder="Ditt namn">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required placeholder="Din e-postadress">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Meddelande:</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Ditt meddelande"></textarea>
+                </div>
+        
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+                <!-- Custom Confirmation / Success Page -->
+                <!-- Uncomment if needed -->
+                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+        
+                <button type="submit" class="submit-btn">Skicka meddelande</button>
+            </form>
+        </section>
+        
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <a href="index.html">
+                        <img src="/bilder/logga/white_yellow.png" alt="RB Svetsteknik AB" class="footer-logo">
+                    </a>
+        
+                    <p>Org.nr 559364-2050<br>RB Svetsteknik AB<br>Nygatan 9 <br>934 51, Byske</p>
+                </div>
+        
+                <div class="footer-column">
+                    <ul>
+                        <li><a href="#about">Om oss</a></li>
+                        <li><a href="#services">Tjänster</a></li>
+                        <li><a href="#projekt">Projekt</a></li>
+                        <li><a href="#contact">Kontakta oss</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-column">
+
+                    <p>E-post: <a href="mailto:rbsvetsteknik@gmail.com">rbsvetsteknik@gmail.com</a></p>
+                    <p>Telefon: <a href="tel:0704877670">0704877670</a></p>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2024 RB Svetsteknik AB.</p>
+                <p>Hemsida skapad av: <a href="https://fyndloggan.se" target="_blank">Fyndloggan</a></p>
+            </div>
+        </footer>
+        
+        
+
+
     </div>
-    <div class="carousel-item">
-      <img src="/bilder/karusell/2-100.jpg" alt="Northvolt">
-    </div>
-    <div class="carousel-item">
-      <img src="/bilder/karusell/3-100.jpg" alt="LKAB">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#clientCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#clientCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-<!-- Ladda in Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-    </div>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/scripts.js"></script>
 
 </body>
