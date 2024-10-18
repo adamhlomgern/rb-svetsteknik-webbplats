@@ -14,7 +14,7 @@ function ShowHide(element) {
 
 var swiper = new Swiper('.mySwiper', {
     autoplay: {
-        delay: 2500,  // Tiden mellan bildbyten
+        delay: 2000,  // Tiden mellan bildbyten
         disableOnInteraction: false,  // Fortsätt autoplay även efter interaktion
     },
     loop: true,  // Gör så att karusellen loopar kontinuerligt
